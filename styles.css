@@ -1,0 +1,149 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Theme toggle button */
+  button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Feedback Form */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  body.dark form {
+    background-color: #2d2d2d;
+  }
+  
+  form h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border 0.2s;
+  }
+  
+  input:focus, textarea:focus {
+    border: 1px solid #4f46e5;
+    outline: none;
+  }
+  
+  body.dark input,
+  body.dark textarea {
+    background-color: #3b3b3b;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  form p {
+    color: crimson;
+    font-size: 14px;
+  }
+  
+  /* Feedback List */
+  .feedback-list h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .feedback-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  /* Feedback Card */
+  .card {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  body.dark .card {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+  }
+  
+  .card h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .card small {
+    color: #777;
+    font-size: 13px;
+  }
+  
+  .card button {
+    margin-top: 10px;
+    background-color: #ef4444;
+  }
+  
+  .card button:hover {
+    background-color: #b91c1c;
+  }
+  
+  /* Responsive Grid */
+  @media (min-width: 768px) {
+    .feedback-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .feedback-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
